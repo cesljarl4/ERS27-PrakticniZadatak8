@@ -15,3 +15,4 @@
 /home/student/Desktop/Domaci/DomaciZadatak/ERS27-PrakticniZadatak8/Infrastructure/obj/Debug/net8.0/refint/Infrastructure.dll
 /home/student/Desktop/Domaci/DomaciZadatak/ERS27-PrakticniZadatak8/Infrastructure/obj/Debug/net8.0/Infrastructure.pdb
 /home/student/Desktop/Domaci/DomaciZadatak/ERS27-PrakticniZadatak8/Infrastructure/obj/Debug/net8.0/ref/Infrastructure.dll
+/home/student/Desktop/Domaci/DomaciZadatak/ERS27-PrakticniZadatak8/Infrastructure/obj/Debug/net8.0/Infrastructure.sourcelink.json

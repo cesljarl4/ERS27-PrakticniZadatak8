@@ -9,3 +9,4 @@
 /home/student/Desktop/Domaci/DomaciZadatak/ERS27-PrakticniZadatak8/Domain/obj/Debug/net8.0/refint/Domain.dll
 /home/student/Desktop/Domaci/DomaciZadatak/ERS27-PrakticniZadatak8/Domain/obj/Debug/net8.0/Domain.pdb
 /home/student/Desktop/Domaci/DomaciZadatak/ERS27-PrakticniZadatak8/Domain/obj/Debug/net8.0/ref/Domain.dll
+/home/student/Desktop/Domaci/DomaciZadatak/ERS27-PrakticniZadatak8/Domain/obj/Debug/net8.0/Domain.sourcelink.json

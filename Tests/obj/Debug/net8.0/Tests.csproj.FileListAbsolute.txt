@@ -110,3 +110,4 @@
 /home/student/Desktop/Domaci/DomaciZadatak/ERS27-PrakticniZadatak8/Tests/obj/Debug/net8.0/Tests.pdb
 /home/student/Desktop/Domaci/DomaciZadatak/ERS27-PrakticniZadatak8/Tests/obj/Debug/net8.0/Tests.genruntimeconfig.cache
 /home/student/Desktop/Domaci/DomaciZadatak/ERS27-PrakticniZadatak8/Tests/obj/Debug/net8.0/ref/Tests.dll
+/home/student/Desktop/Domaci/DomaciZadatak/ERS27-PrakticniZadatak8/Tests/obj/Debug/net8.0/Tests.sourcelink.json

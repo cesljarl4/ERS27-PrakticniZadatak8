@@ -15,3 +15,4 @@
 /home/student/Desktop/Domaci/DomaciZadatak/ERS27-PrakticniZadatak8/Database/obj/Debug/net8.0/refint/Database.dll
 /home/student/Desktop/Domaci/DomaciZadatak/ERS27-PrakticniZadatak8/Database/obj/Debug/net8.0/Database.pdb
 /home/student/Desktop/Domaci/DomaciZadatak/ERS27-PrakticniZadatak8/Database/obj/Debug/net8.0/ref/Database.dll
+/home/student/Desktop/Domaci/DomaciZadatak/ERS27-PrakticniZadatak8/Database/obj/Debug/net8.0/Database.sourcelink.json

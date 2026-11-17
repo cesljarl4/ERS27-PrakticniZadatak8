@@ -5,22 +5,57 @@ using Shared;
 
 namespace Application.Services;
 
-// Polazna struktura servisa; poslovne operacije nisu implementirane.
+// F1 i F2: dodavanje zapisa. Zavisi samo od uskog interfejsa za upis, loggera i sata.
 public sealed class ZapisServis
 {
-    private readonly IZapisiRepozitorijum _repozitorijum;
+    private readonly IZapisiUpis _upis;
     private readonly ILoggerServis _logger;
+    private readonly IClock _clock;
 
-    public ZapisServis(IZapisiRepozitorijum repozitorijum, ILoggerServis logger)
+    public ZapisServis(IZapisiUpis upis, ILoggerServis logger, IClock clock)
     {
-        _repozitorijum = repozitorijum ?? throw new ArgumentNullException(nameof(repozitorijum));
-        _logger = logger ?? throw new ArgumentNullException(nameof(logger));
+        _upis = upis;
+        _logger = logger;
+        _clock = clock;
     }
 
-    public Result Dodaj(Zapis zapis)
+    public Result<Guid> DodajNovuTemu(string? naziv, string? opis, string? oblast, int trajanjeMin, string? poglavlje)
     {
-        // TODO: definisati poslovna pravila i pozvati repozitorijum.
-        // Primer pokazuje gde pripada use case, ne daje rešenje zadatka.
-        return Result.Failure("zadatak.nije_implementirano", "Implementirati prema specifikaciji.");
+        var kreiranje = NovaTema.Kreiraj(naziv, opis, oblast, trajanjeMin, poglavlje, _clock.UtcNow);
+        if (!kreiranje.Uspeh)
+        {
+            return Neuspeh("dodavanje nove teme", kreiranje.Greska!.Kod, kreiranje.Greska.Poruka);
+        }
+
+        return Sacuvaj("dodavanje nove teme", kreiranje.Vrednost!);
+    }
+
+    public Result<Guid> DodajPonavljanje(string? naziv, string? opis, string? oblast, int trajanjeMin, DateOnly? datumPrethodnogUcenja)
+    {
+        var kreiranje = Ponavljanje.Kreiraj(naziv, opis, oblast, trajanjeMin, datumPrethodnogUcenja, _clock.UtcNow);
+        if (!kreiranje.Uspeh)
+        {
+            return Neuspeh("dodavanje ponavljanja", kreiranje.Greska!.Kod, kreiranje.Greska.Poruka);
+        }
+
+        return Sacuvaj("dodavanje ponavljanja", kreiranje.Vrednost!);
+    }
+
+    private Result<Guid> Sacuvaj(string operacija, Zapis zapis)
+    {
+        Result upis = _upis.Sacuvaj(zapis);
+        if (upis.IsFailure)
+        {
+            return Neuspeh(operacija, upis.Error!.Code, upis.Error.Message);
+        }
+
+        _logger.Loguj($"USPEH {operacija}: {zapis.Id}");
+        return Result<Guid>.Success(zapis.Id);
+    }
+
+    private Result<Guid> Neuspeh(string operacija, string kod, string poruka)
+    {
+        _logger.Loguj($"NEUSPEH {operacija}: {kod} - {poruka}");
+        return Result<Guid>.Failure(kod, poruka);
     }
 }
