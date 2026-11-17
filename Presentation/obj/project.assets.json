@@ -1,0 +1,161 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {
+      "Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Application.dll": {}
+        }
+      },
+      "Database/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Application": "1.0.0",
+          "Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Database.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Database.dll": {}
+        }
+      },
+      "Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Domain.dll": {}
+        }
+      },
+      "Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Application": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Infrastructure.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Application/1.0.0": {
+      "type": "project",
+      "path": "../Application/Application.csproj",
+      "msbuildProject": "../Application/Application.csproj"
+    },
+    "Database/1.0.0": {
+      "type": "project",
+      "path": "../Database/Database.csproj",
+      "msbuildProject": "../Database/Database.csproj"
+    },
+    "Domain/1.0.0": {
+      "type": "project",
+      "path": "../Domain/Domain.csproj",
+      "msbuildProject": "../Domain/Domain.csproj"
+    },
+    "Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../Infrastructure/Infrastructure.csproj",
+      "msbuildProject": "../Infrastructure/Infrastructure.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0": [
+      "Application >= 1.0.0",
+      "Database >= 1.0.0",
+      "Domain >= 1.0.0",
+      "Infrastructure >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "/home/student/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/home/student/Desktop/Domaci/DomaciZadatak/ERS27-PrakticniZadatak8/Presentation/Presentation.csproj",
+      "projectName": "Presentation",
+      "projectPath": "/home/student/Desktop/Domaci/DomaciZadatak/ERS27-PrakticniZadatak8/Presentation/Presentation.csproj",
+      "packagesPath": "/home/student/.nuget/packages/",
+      "outputPath": "/home/student/Desktop/Domaci/DomaciZadatak/ERS27-PrakticniZadatak8/Presentation/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/home/student/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {
+            "/home/student/Desktop/Domaci/DomaciZadatak/ERS27-PrakticniZadatak8/Application/Application.csproj": {
+              "projectPath": "/home/student/Desktop/Domaci/DomaciZadatak/ERS27-PrakticniZadatak8/Application/Application.csproj"
+            },
+            "/home/student/Desktop/Domaci/DomaciZadatak/ERS27-PrakticniZadatak8/Database/Database.csproj": {
+              "projectPath": "/home/student/Desktop/Domaci/DomaciZadatak/ERS27-PrakticniZadatak8/Database/Database.csproj"
+            },
+            "/home/student/Desktop/Domaci/DomaciZadatak/ERS27-PrakticniZadatak8/Domain/Domain.csproj": {
+              "projectPath": "/home/student/Desktop/Domaci/DomaciZadatak/ERS27-PrakticniZadatak8/Domain/Domain.csproj"
+            },
+            "/home/student/Desktop/Domaci/DomaciZadatak/ERS27-PrakticniZadatak8/Infrastructure/Infrastructure.csproj": {
+              "projectPath": "/home/student/Desktop/Domaci/DomaciZadatak/ERS27-PrakticniZadatak8/Infrastructure/Infrastructure.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      }
+    },
+    "frameworks": {
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/256/sdk/8.0.407/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

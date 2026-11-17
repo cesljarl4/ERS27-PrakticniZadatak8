@@ -1,0 +1,11 @@
+/home/student/Desktop/Domaci/DomaciZadatak/ERS27-PrakticniZadatak8/Domain/bin/Debug/net8.0/Domain.deps.json
+/home/student/Desktop/Domaci/DomaciZadatak/ERS27-PrakticniZadatak8/Domain/bin/Debug/net8.0/Domain.dll
+/home/student/Desktop/Domaci/DomaciZadatak/ERS27-PrakticniZadatak8/Domain/bin/Debug/net8.0/Domain.pdb
+/home/student/Desktop/Domaci/DomaciZadatak/ERS27-PrakticniZadatak8/Domain/obj/Debug/net8.0/Domain.GeneratedMSBuildEditorConfig.editorconfig
+/home/student/Desktop/Domaci/DomaciZadatak/ERS27-PrakticniZadatak8/Domain/obj/Debug/net8.0/Domain.AssemblyInfoInputs.cache
+/home/student/Desktop/Domaci/DomaciZadatak/ERS27-PrakticniZadatak8/Domain/obj/Debug/net8.0/Domain.AssemblyInfo.cs
+/home/student/Desktop/Domaci/DomaciZadatak/ERS27-PrakticniZadatak8/Domain/obj/Debug/net8.0/Domain.csproj.CoreCompileInputs.cache
+/home/student/Desktop/Domaci/DomaciZadatak/ERS27-PrakticniZadatak8/Domain/obj/Debug/net8.0/Domain.dll
+/home/student/Desktop/Domaci/DomaciZadatak/ERS27-PrakticniZadatak8/Domain/obj/Debug/net8.0/refint/Domain.dll
+/home/student/Desktop/Domaci/DomaciZadatak/ERS27-PrakticniZadatak8/Domain/obj/Debug/net8.0/Domain.pdb
+/home/student/Desktop/Domaci/DomaciZadatak/ERS27-PrakticniZadatak8/Domain/obj/Debug/net8.0/ref/Domain.dll

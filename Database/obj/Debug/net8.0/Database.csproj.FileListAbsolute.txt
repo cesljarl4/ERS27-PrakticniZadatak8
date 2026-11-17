@@ -1,0 +1,17 @@
+/home/student/Desktop/Domaci/DomaciZadatak/ERS27-PrakticniZadatak8/Database/bin/Debug/net8.0/Database.deps.json
+/home/student/Desktop/Domaci/DomaciZadatak/ERS27-PrakticniZadatak8/Database/bin/Debug/net8.0/Database.dll
+/home/student/Desktop/Domaci/DomaciZadatak/ERS27-PrakticniZadatak8/Database/bin/Debug/net8.0/Database.pdb
+/home/student/Desktop/Domaci/DomaciZadatak/ERS27-PrakticniZadatak8/Database/bin/Debug/net8.0/Application.dll
+/home/student/Desktop/Domaci/DomaciZadatak/ERS27-PrakticniZadatak8/Database/bin/Debug/net8.0/Domain.dll
+/home/student/Desktop/Domaci/DomaciZadatak/ERS27-PrakticniZadatak8/Database/bin/Debug/net8.0/Application.pdb
+/home/student/Desktop/Domaci/DomaciZadatak/ERS27-PrakticniZadatak8/Database/bin/Debug/net8.0/Domain.pdb
+/home/student/Desktop/Domaci/DomaciZadatak/ERS27-PrakticniZadatak8/Database/obj/Debug/net8.0/Database.csproj.AssemblyReference.cache
+/home/student/Desktop/Domaci/DomaciZadatak/ERS27-PrakticniZadatak8/Database/obj/Debug/net8.0/Database.GeneratedMSBuildEditorConfig.editorconfig
+/home/student/Desktop/Domaci/DomaciZadatak/ERS27-PrakticniZadatak8/Database/obj/Debug/net8.0/Database.AssemblyInfoInputs.cache
+/home/student/Desktop/Domaci/DomaciZadatak/ERS27-PrakticniZadatak8/Database/obj/Debug/net8.0/Database.AssemblyInfo.cs
+/home/student/Desktop/Domaci/DomaciZadatak/ERS27-PrakticniZadatak8/Database/obj/Debug/net8.0/Database.csproj.CoreCompileInputs.cache
+/home/student/Desktop/Domaci/DomaciZadatak/ERS27-PrakticniZadatak8/Database/obj/Debug/net8.0/Database.csproj.Up2Date
+/home/student/Desktop/Domaci/DomaciZadatak/ERS27-PrakticniZadatak8/Database/obj/Debug/net8.0/Database.dll
+/home/student/Desktop/Domaci/DomaciZadatak/ERS27-PrakticniZadatak8/Database/obj/Debug/net8.0/refint/Database.dll
+/home/student/Desktop/Domaci/DomaciZadatak/ERS27-PrakticniZadatak8/Database/obj/Debug/net8.0/Database.pdb
+/home/student/Desktop/Domaci/DomaciZadatak/ERS27-PrakticniZadatak8/Database/obj/Debug/net8.0/ref/Database.dll
