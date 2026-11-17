@@ -4,18 +4,43 @@ using Shared;
 
 namespace Database.Repositories;
 
-// TODO (grana 2): implementirati skladistenje u memoriji.
+// Cuva zapise u memoriji; podaci nestaju kada se aplikacija ugasi.
 public sealed class InMemoryZapisiRepozitorijum : IZapisiRepozitorijum
 {
-    public Result Sacuvaj(Zapis zapis) =>
-        Result.Failure("repo.nije_implementirano", "Implementirati cuvanje u memoriji.");
+    private readonly Dictionary<Guid, Zapis> _zapisi = new();
 
-    public Result Azuriraj(Zapis zapis) =>
-        Result.Failure("repo.nije_implementirano", "Implementirati azuriranje.");
+    public Result Sacuvaj(Zapis zapis)
+    {
+        if (_zapisi.ContainsKey(zapis.Id))
+        {
+            return Result.Failure("repo.vec_postoji", "Zapis sa tim identifikatorom vec postoji.");
+        }
 
-    public Result<Zapis> Pronadji(Guid id) =>
-        Result<Zapis>.Failure("repo.nije_implementirano", "Implementirati pretragu po ID-u.");
+        _zapisi[zapis.Id] = zapis;
+        return Result.Success();
+    }
+
+    public Result Azuriraj(Zapis zapis)
+    {
+        if (!_zapisi.ContainsKey(zapis.Id))
+        {
+            return Result.Failure("repo.nije_pronadjen", "Zapis sa tim identifikatorom ne postoji.");
+        }
+
+        _zapisi[zapis.Id] = zapis;
+        return Result.Success();
+    }
+
+    public Result<Zapis> Pronadji(Guid id)
+    {
+        if (_zapisi.TryGetValue(id, out Zapis? zapis))
+        {
+            return Result<Zapis>.Success(zapis);
+        }
+
+        return Result<Zapis>.Failure("repo.nije_pronadjen", "Zapis sa tim identifikatorom ne postoji.");
+    }
 
     public Result<IReadOnlyList<Zapis>> Svi() =>
-        Result<IReadOnlyList<Zapis>>.Failure("repo.nije_implementirano", "Implementirati pregled.");
+        Result<IReadOnlyList<Zapis>>.Success(_zapisi.Values.OrderBy(z => z.KreiranoUtc).ToList());
 }
