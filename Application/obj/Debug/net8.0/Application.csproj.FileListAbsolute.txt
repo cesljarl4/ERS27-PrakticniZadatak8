@@ -13,3 +13,4 @@
 /home/student/Desktop/Domaci/DomaciZadatak/ERS27-PrakticniZadatak8/Application/obj/Debug/net8.0/refint/Application.dll
 /home/student/Desktop/Domaci/DomaciZadatak/ERS27-PrakticniZadatak8/Application/obj/Debug/net8.0/Application.pdb
 /home/student/Desktop/Domaci/DomaciZadatak/ERS27-PrakticniZadatak8/Application/obj/Debug/net8.0/ref/Application.dll
+/home/student/Desktop/Domaci/DomaciZadatak/ERS27-PrakticniZadatak8/Application/obj/Debug/net8.0/Application.sourcelink.json

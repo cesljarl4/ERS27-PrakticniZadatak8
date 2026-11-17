@@ -22,3 +22,4 @@
 /home/student/Desktop/Domaci/DomaciZadatak/ERS27-PrakticniZadatak8/Presentation/obj/Debug/net8.0/Presentation.pdb
 /home/student/Desktop/Domaci/DomaciZadatak/ERS27-PrakticniZadatak8/Presentation/obj/Debug/net8.0/Presentation.genruntimeconfig.cache
 /home/student/Desktop/Domaci/DomaciZadatak/ERS27-PrakticniZadatak8/Presentation/obj/Debug/net8.0/ref/Presentation.dll
+/home/student/Desktop/Domaci/DomaciZadatak/ERS27-PrakticniZadatak8/Presentation/obj/Debug/net8.0/Presentation.sourcelink.json
