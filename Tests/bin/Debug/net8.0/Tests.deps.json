@@ -15,7 +15,8 @@
           "Microsoft.NET.Test.Sdk": "17.11.1",
           "Moq": "4.20.72",
           "NUnit": "4.2.2",
-          "NUnit3TestAdapter": "4.6.0"
+          "NUnit3TestAdapter": "4.6.0",
+          "Presentation": "1.0.0"
         },
         "runtime": {
           "Tests.dll": {}
@@ -388,6 +389,20 @@
             "fileVersion": "1.0.0.0"
           }
         }
+      },
+      "Presentation/1.0.0": {
+        "dependencies": {
+          "Application": "1.0.0",
+          "Database": "1.0.0",
+          "Domain": "1.0.0",
+          "Infrastructure": "1.0.0"
+        },
+        "runtime": {
+          "Presentation.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
       }
     }
   },
@@ -490,6 +505,11 @@
       "sha512": ""
     },
     "Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Presentation/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
